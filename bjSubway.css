@@ -1,0 +1,279 @@
+*{
+
+}
+.op-subway-bord ul,.op-subway-bord li,.op-subway-bord p{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*大盒子*/
+.op-subway-bord{
+    width: 300px;
+    height: auto;
+    border: 1px solid silver;
+    font-size: 13px;
+    line-height: 1.5;
+}
+/*主盒子*/
+.op-subway-main{
+    height: 125px;
+    padding: 0 10px;
+    position: relative;
+}
+/*选择框盒子*/
+.op-subway-box{
+    width: 300px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+/*线路盒子*/
+.op-subway-line{
+    cursor: pointer;
+    list-style: none;
+    width: 100px;
+    height: 24px;//比box小1px
+    columns:red;
+    line-height: 24px;
+    float: left;
+    border: 1px solid darkgrey;
+    position: relative;
+}
+
+/*em字体*/
+.op-subway-line em{
+    font-style: normal;
+    font-size: 13px;
+    color: #aaa;
+    padding-left: 7px;
+}
+/*span方块儿颜色*/
+.op-subway-line em span{
+    display: block;//此元素将显示为块级元素，此元素前后会带有换行符
+    height: 9px;
+    width: 9px;
+    top: 8px;
+    left: 8px;
+    position: absolute;
+}
+
+/*下拉框边框和背景*/
+.op-subway-ul{
+    background: #fff;
+    z-index: 999;//是弹出框始终浮出
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    display: none;
+    border: 1px solid #bbb;
+    top: 24px;
+    left: -1px;
+    overflow-y: scroll;//滚动条设置
+}
+
+/*下拉框数据*/
+.op-subway-ul li{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background: #fff;
+    color: #333;
+    font-size: 13px;
+    list-style: none;
+}
+
+/*下拉框span方块*/
+.op-subway-ul li span{
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 12px;
+    left: 9px;
+}
+
+/*连接符的设置*/
+.op-subway-jp{
+    width: 20px;
+    height: 24px;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 700;//字体大小
+    color: #ccc;
+}
+
+/*车站框*/
+.op-subway-station{
+    cursor: pointer;
+    background: #FFFFFF;
+    list-style: none;
+    width: 100px;
+    height: 24px;//比box小1px
+    columns:red;
+    line-height: 24px;
+    float: left;
+    border: 1px solid darkgrey;
+    position: relative;
+}
+
+/*车站框em*/
+.op-subway-station em{
+    font-style: normal;
+    font-size: 13px;
+    padding: 0 5px;
+    color: #aaa;
+}
+/*车站下拉框*/
+.op-subway-ulk{
+    width: 100px;
+    height: auto;
+    line-height: 30px;
+    z-index: 999;
+    position: relative;
+    display: none;
+    border: 1px solid silver;
+    top:24px;
+    left: -1px;
+}
+/*车站下拉框数据*/
+.op-subway-ulk li{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: dimgray;
+    background: silver;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+/*下拉框的小方块按钮*/
+.op-subway-k{
+    cursor: pointer;
+    width: 25px;
+    height: 24px;
+    top: -1px;
+    right: -1px;
+    position: absolute;
+    border: 1px solid #bbbbbb;
+    background: url("http://imgbdb2.bendibao.com/images/icons.jpg") no-repeat center center;
+}
+/**/
+.op-subway-box-end{
+    clear: both;
+}
+/*按钮*/
+.op-subway-button{
+    left: 10px;
+    width: 80px;
+    height: 25px;
+    margin-top: 42px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    color: #b8b8b8;
+    background: #f5f5f5;
+    border: 1px solid silver;
+    font-size: 13px;
+}
+.op-subway-button_g{
+    border:0;
+    position: absolute;
+    left: 3px;
+    cursor: pointer;
+    width: 80px;
+    height: 25px;
+    background: blue;
+    margin-top: 42px;
+    margin-left: 31px;
+    text-align: center;
+    line-height: 25px;
+}
+/*按钮下*/
+.op-subway-st{
+    font-size: 13px;
+    position: absolute;
+    left: 150px;
+    bottom: 23px;
+    display: none;
+}
+/*票价框*/
+.op-subway-tab{
+    margin-top: 54px;
+    height: 28px;
+    border-bottom: 1px solid #d9d9d9;
+    background: #fafafa;
+    display: none;
+    width: 100px;
+}
+/*票价*/
+.op-subway-on{
+    list-style: none;
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-top: 2px solid #2b542c;
+    color: #333;
+    background: #fff;
+    border-bottom: 1px solid white;
+    z-index: 0;
+    width: 90px;
+}
+.op-subway-li{
+    border: 1px solid #fff;
+    list-style: none;
+    width: 180px;
+    height: 26px;
+    float: left;
+    text-align: center;
+    line-height: 28px;
+    color: #333;
+    font-size: 13px;
+    background: #fafafa;
+}
+/*底部*/
+.op-subway-footer{
+    display: none;
+    overflow: hidden;
+    height: auto;
+    padding-top: 12px;
+    width: 100px;
+    clear: both;
+}
+.op-subway-text{
+    margin: 0 auto;
+    clear: both;
+    padding: 0 2.5%;
+}
+.op-subway-title{
+    line-height: 16px;
+    font-size: 13px;
+    color: #333;
+}
+/*详情*/
+.op-subway-increase{
+    color: #f50;
+    font: inherit;
+    font-weight: 700;
+}
+
+.op-subway-one{
+    background: red;
+}
+
+.op-subway-two{
+    background: blue;
+}
+
+
+
+
+
+
+
